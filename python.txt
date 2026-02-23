@@ -138,6 +138,15 @@ characters, alphabets(uppercase/lowercase)
             special characters
 
 my_name = 'rahul'        variable space                 value space
+                               my_name                         0x591
+                            [0x591]                            [[r][a][h][u][l]]
 
-                                                        [[r][a][h][u][l]]
+When i should use single quote('' or "")
 
+
+
+                                **Indexing**
+    Positive Indexing                                           Negative Indexing
+
+    si->0                                             ##Access the first value
+    ei->len(coll)-1                                    name[-len(name)]
