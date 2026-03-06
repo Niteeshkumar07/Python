@@ -559,4 +559,44 @@ Deep Copy --> import copy
 --- while loop
 --- for loop
 
+=====================        **Function**          =====================
 
+Function ------->
+                1.user-defined (4 types)
+                2.Inbuil function(2 types)
+
+                        def func_name(args):   -----> function declaration
+                                //statement block ----> function definition
+
+
+                        func_name    -------------> function accessing
+                        func_name(args) ----------> function calling
+
+
+def add(a,b) ----> fomal arguments:
+        print(a+b)
+
+add(10,20) ------> actual arguments
+        
+
+        stack                   heap
+
+       add   |----------------> 0x4141
+        [0x4141]                [print(a+b)]
+                                Method area
+                                0x11
+         a--------------------->[10]
+         [0x11]
+                                0x10
+         b[0x10]---------------->[20]
+
+                                0x94
+         add(a,b)---------------->[30] ovveride the print(a+b) 
+
+         after that garbage collector remove the temporary blocks and if function is called only one time
+         method area is created then variables block created again and again
+
+No arguments and no return
+No arguments and return
+Arguments and no return
+Arguments and return
