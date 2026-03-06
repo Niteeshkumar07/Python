@@ -600,3 +600,110 @@ No arguments and no return
 No arguments and return
 Arguments and no return
 Arguments and return
+
+
+
+
+
+                                OOPS(object oriented programming system)
+
+** It is a type of programming on which we will use only class & objects
+
+Advantages:
+        1. Code Resuablitiy
+        2. Multi-Tasking behaviour
+        3. Data security
+        4. Data hiding
+        5. TO make the code organized
+        6. Better Readability
+
+**For developing real world applications or solving real time problems, we prefer to use oops.
+
+class:
+        It is a blueprint of an object in which all the properties & functionalities will be stored.
+
+Object or, instance:
+        The Outcome of a class instance of class.
+
+** To create a class, we have to use one keyword called "class".
+
+        Syntax: class ClassName:
+        `               properties/
+                        functionalities(methods)
+
+        obj_name = ClassName(args)
+
+variables/properties/states/members:properties or , states , or members are nothing but variable which we can create inside a class or inside of an object.
+
+**Exactly two types of properties we have on case of python:
+`       1.Class properties
+        2.Object properties
+
+** Whatever vraiables we will create inside a class, will be known as the properties of a class.
+For each and every object, the class members will be the same.
+
+** Whatever vraiables we will create inside a object, will be known as the properties of a object only.
+For each and every object, the object members will be the different.
+
+
+                                >>> import class_object
+                                4
+                                <class_object.Car object at 0x000002D1BA14CD70>
+                                >>> Tata = class_object.Car()
+                                >>> Tata.wheelers
+                                4
+                                >>> 
+
+
+>>> import class_object as c
+4
+<class_object.Car object at 0x000001C4EB36CD70>
+>>> car = c.Car()
+>>> car.engine
+'Petrol'
+>>> 
+
+
+                        class ClassName:
+                                properties
+
+                                def __init__(self, arg1, arg2, arg3,.....,argn):
+                                        self.arg1 = arg1
+                                        self.arg2 = arg2
+
+
+        
+Constructor:
+        1. In python, __init__ is known as Constructor
+        2. It is used to intialize the state/properties of an object
+        3. We dont have to call the init method explicitly.During object creation, it will automatically 
+        get invoked.
+        4. In case of __init__, please make sure that the first argument should be "self".
+        5. "self"will refer the current execution context(Currently created object's address)
+        6. If we want , we can use any other vraiable name in place of "self". Nut according to the industrial standard rules, we should use "self".
+
+
+
+Methods:
+        1. object method
+        2. class method
+        3. static method
+
+
+** Object Method -> It is used to acess & modify the properties of an object.
+
+                class ClassName:
+                        def method_name(self, args):
+                                statement block
+ 
+        
+** Class method -> It is used to acess & modify the properties of a class.
+                   @classmethod" decorator is required to create one class method.
+
+                         class ClassName:
+                                @classmethod                 cls -> address of class
+                                def method_name(cls, args):
+                                        statement block     
+
+
+ 
