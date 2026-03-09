@@ -26,6 +26,11 @@ class Car:
         print(f'No of gears: {cls.gears}')
 
 
+    @staticmethod
+    def greeting(name):
+        print(f'Good Morning {name}')
+
+
 tata = Car(True, 'Level 5', '2L')
 tata.display_properties()
 tata.update_gears(5)

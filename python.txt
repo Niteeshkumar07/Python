@@ -706,4 +706,12 @@ Methods:
                                         statement block     
 
 
- 
+ **Static method: 
+                1. It is neither related to object nor class.
+                2. For static method, there is no need to use self or, cls.
+                3. "@staticmethod" decorator is used to create one static method.
+
+                class ClassName:
+                        @staticmethod
+                        def method_name(args):
+                                statement block
